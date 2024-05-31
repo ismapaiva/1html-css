@@ -14,7 +14,7 @@ body {
     display: flex;
     justify-content: space-between;
     gap: 4rem;
-    margin: 10%;
+    margin: 5% 10%;
 }
 
 .div-texto {
@@ -52,6 +52,7 @@ body {
 .button-social-media:active {
     background-color: #DF1265;
     /* Muda a cor do botão ao clicar */
+
 }
 
 .titulo {
@@ -88,3 +89,71 @@ body {
     border-radius: 20px;
     box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.3);
 }
+
+.div-botao-muda-cor{
+    display: flex;
+    gap: 1rem;
+    margin-left: 10%;
+    align-items: center;
+}
+.botao-muda-cor{
+   width: 15%;
+   height: 100%;
+   background-color: #FCA311;
+   color: #DF1265;
+   padding: 1rem;
+   font-weight: 700;
+   border-radius: 10px;
+}
+
+.botao-muda-cor:active{
+    background-color: #DF1265;
+}
+
+/* CHANGE COLOR MODE */
+
+/* /* body.dark-mode {
+    background-color:#FCA311;
+    color: #2f2f2f;
+    a {
+      color: white;
+    }
+    button {
+      background-color: white;
+      color: black;
+    }
+  }
+   */
+  body.light-mode {
+    background-color: #ffda9d;
+    color: #2f2f2f;
+    a {
+      color: green;
+    }
+    .strong-titulo {
+        color: #DF1265;
+        font-weight: 600;
+    }
+    .spam-texto {
+        color:#DF1265;
+        font-weight: 600;
+        
+    }
+    .button-social-media {
+        background-color: #DF1265;
+        padding: 1rem;
+        border-radius: 10px;
+        text-decoration: none;
+        color: white;
+        font-weight: 600;
+        width: 35%;
+        text-align: center;
+        box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.3);
+        transition: transform 0.3s ease, background-color;
+    }
+    .botao-muda-cor{
+        background-color: #DF1265;
+        color: white;
+    }
+
+  } 
