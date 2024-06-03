@@ -1,20 +1,47 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto&display=swap');
 
+*{
+    margin: 0;
+    padding: 0;
 
+}
 body {
+    display: flex;
+    flex-direction: column;
     background-color: #2f2f2f;
     color: #ffffff;
     font-family: Montserrat;
     font-weight: 300;
-    height: 90vh;
+    height: 100vh;
     box-sizing: border-box;
+}
+
+.nav-menu {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    gap: 3rem;
+    margin: 2.5% 10%
+}
+
+.nav-menu a {
+    text-decoration: none;
+    color: #FCA311;
+    font-weight: 500;
+    font-size: 1.5rem;
+    transition: transform 0.3s ease
+}
+
+.nav-menu a:hover {
+    transform: scale(1.1);
+    color: #DF1265;
 }
 
 .main-content {
     display: flex;
     justify-content: space-between;
     gap: 4rem;
-    margin: 5% 10%;
+    margin: 0px 10% 5% 10%;
 }
 
 .div-texto {
@@ -26,20 +53,33 @@ body {
 
 .div-botoes {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: space-between;
     align-items: center;
     margin: 1rem 0px;
+    gap: 1rem;
+    padding: 0px 7rem;
+}
+
+.titulo-rede-social {
+    font-size: 1.5rem;
+    font-weight: 500;
 }
 
 .button-social-media {
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
     background-color: #FCA311;
-    padding: 1rem;
+    padding: .4rem 1rem;
     border-radius: 10px;
     text-decoration: none;
     color: #2f2f2f;
     font-weight: 600;
-    width: 35%;
+    font-size: 1.2rem;
+    width: 80%;
     text-align: center;
     box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.3);
     transition: transform 0.3s ease, background-color;
@@ -52,7 +92,16 @@ body {
 .button-social-media:active {
     background-color: #DF1265;
     /* Muda a cor do botão ao clicar */
+}
 
+.btn-social-media {
+    display: flex;
+    align-items: center;
+}
+
+.logo-rede-social {
+    width: 15%;
+    height: 100%;
 }
 
 .titulo {
@@ -79,7 +128,6 @@ body {
 
 .div-esquerda {
     display: flex;
-
     justify-content: space-around;
     align-items: center;
 }
@@ -88,72 +136,79 @@ body {
     width: 100%;
     border-radius: 20px;
     box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.3);
+
 }
 
-.div-botao-muda-cor{
+.div-botao-muda-cor {
     display: flex;
-    gap: 1rem;
-    margin-left: 10%;
     align-items: center;
-}
-.botao-muda-cor{
-   width: 15%;
-   height: 100%;
-   background-color: #FCA311;
-   color: #DF1265;
-   padding: 1rem;
-   font-weight: 700;
-   border-radius: 10px;
+    gap: 1rem;
+    margin: 5% 10%;
 }
 
-.botao-muda-cor:active{
+.botao-muda-cor {
+    width: 15%;
+    height: 100%;
+    background-color: #FCA311;
+    color: #DF1265;
+    padding: 1rem;
+    font-weight: 500;
+    border-radius: 10px;
+}
+
+.botao-muda-cor:active {
     background-color: #DF1265;
+}
+
+/* FOOTER */
+.footer {
+    background-color: #FCA311;
+    padding: 2% ;
+    text-align: center;
+    color: #2f2f2f;
+    font-weight: 500;
+}
+#ano-atual{
+    font-weight: 700;
 }
 
 /* CHANGE COLOR MODE */
 
-/* /* body.dark-mode {
-    background-color:#FCA311;
-    color: #2f2f2f;
-    a {
-      color: white;
-    }
-    button {
-      background-color: white;
-      color: black;
-    }
-  }
-   */
-  body.light-mode {
+body.light-mode {
     background-color: #ffda9d;
     color: #2f2f2f;
-    a {
-      color: green;
-    }
+
     .strong-titulo {
         color: #DF1265;
         font-weight: 600;
     }
+
     .spam-texto {
-        color:#DF1265;
+        color: #DF1265;
         font-weight: 600;
-        
+
     }
+
     .button-social-media {
-        background-color: #DF1265;
-        padding: 1rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 1rem;
+        padding: .4rem 1rem;
         border-radius: 10px;
         text-decoration: none;
-        color: white;
         font-weight: 600;
-        width: 35%;
+        font-size: 1.2rem;
+        width: 80%;
         text-align: center;
         box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.3);
         transition: transform 0.3s ease, background-color;
-    }
-    .botao-muda-cor{
         background-color: #DF1265;
         color: white;
     }
 
-  } 
+    .botao-muda-cor {
+        background-color: #DF1265;
+        color: white;
+    }
+}
