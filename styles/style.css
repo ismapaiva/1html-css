@@ -225,6 +225,11 @@ body {
     .titulo-rede-social{
         text-align: center;
     }
+    .nav-menu{
+        /* gap:1rem;s */
+        padding: 0;
+        margin: 10% 10%
+    }
 
 }
 
