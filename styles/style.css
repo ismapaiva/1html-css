@@ -1,0 +1,250 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto&display=swap');
+
+:root {
+    --primary-color: #2f2f2f;
+    --secondary-color: #FCA311;
+    --tertiary-color: #DF1265;
+    --white-color: #ffffff
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    background-color: var(--primary-color);
+    color: #ffffff;
+    font-family: Montserrat, sans-serif;
+    font-weight: 300;
+}
+
+.nav-menu {
+    display: flex;
+    gap: 3rem;
+    margin: 2.5% 10%;
+}
+
+.nav-menu a {
+    text-decoration: none;
+    color: var(--secondary-color);
+    font-weight: 500;
+    font-size: 1.2rem;
+    transition: transform 0.3s ease;
+}
+
+.nav-menu a:hover {
+    transform: scale(1.1);
+    color: var(--tertiary-color);
+}
+
+.main-content,
+.section-1-about-me {
+    display: flex;
+    justify-content: space-between;
+    gap: 4rem;
+    margin: 0 10% 5%;
+}
+
+.div-texto,
+.div-texto-esquerda,
+.div-texto-direita {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.div-texto {
+    justify-content: space-around;
+}
+
+.div-texto-esquerda,
+.div-texto-direita {
+    width: 45%;
+    line-height: 1.5rem;
+}
+
+.titulo {
+    font-weight: 500;
+    font-size: 1.6rem;
+    margin: 1rem 0;
+    line-height: 2.5rem;
+}
+
+.strong-titulo {
+    color: var(--secondary-color);
+    font-weight: 600;
+}
+
+.texto-descricao {
+    font-size: 1.2rem;
+    line-height: 2rem;
+}
+
+.spam-texto {
+    color: var(--tertiary-color);
+    font-weight: 600;
+}
+
+.div-botoes {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    margin: 1rem 0;
+    padding: 0 10%;
+}
+
+.titulo-rede-social {
+    font-size: 1.3rem;
+    font-weight: 500;
+}
+
+.button-social-media {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    border-radius: 10px;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 1.2rem;
+    width: 70%;
+    text-align: center;
+    background-color: var(--secondary-color);
+    color: var(--primary-color);
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease, background-color;
+}
+
+.button-social-media:hover {
+    transform: scale(1.1);
+}
+
+.button-social-media:active,
+.botao-muda-cor:active {
+    background-color: var(--tertiary-color);
+}
+
+.btn-social-media {
+    display: flex;
+    align-items: center;
+}
+
+.logo-rede-social {
+    width: 15%;
+    height: 90%;
+}
+
+.div-direita {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.foto-isma {
+    width: 100%;
+    border-radius: 20px;
+    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.3);
+}
+
+.div-botao-muda-cor {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin: 5% 10%;
+}
+
+.botao-muda-cor {
+    width: 15%;
+    padding: 1rem;
+    background-color: var(--secondary-color);
+    color: var(--tertiary-color);
+    font-weight: 500;
+    border-radius: 10px;
+}
+
+/* F O O T E R */
+.footer {
+    background-color: var(--secondary-color);
+    padding: 1%;
+    text-align: center;
+    color: var(--primary-color);
+    font-weight: 500;
+    font-size: .8rem;
+
+    width: 100%;
+}
+
+#ano-atual {
+    font-weight: 700;
+}
+
+/* R E S P O N S I V E  */
+
+/* TABLET */
+@media  (max-width: 960px) {
+
+    .main-content{
+        flex-direction: column-reverse;
+    }
+    
+    .div-direita img{
+        width: 60%;
+    }
+
+    .nav-menu{
+        justify-content: center;
+        padding: 5% 10%;
+    }
+
+    .nav-menu a{
+        font-size: 1.5rem;
+    }
+    .footer{
+        margin-top: 5%;
+    }
+    /* ABOUT ME */
+    .section-1-about-me{
+        flex-direction: column-reverse;
+        align-items: center;
+        gap: 2rem;
+    }
+    .div-texto-esquerda{
+        width: 100%;
+    }
+}
+/* SMARTPHONE */
+@media (max-width: 520px){
+    .button-social-media{
+        padding: 3%;
+    }
+    .titulo-rede-social{
+        text-align: center;
+    }
+
+}
+
+/* CHANGE COLOR  */
+/* body.light-mode {
+    background-color: #ffda9d;
+    color: #2f2f2f;
+}
+
+body.light-mode .strong-titulo, body.light-mode .spam-texto {
+    color: #DF1265;
+    font-weight: 600;
+}
+
+body.light-mode .button-social-media {
+    background-color: #DF1265;
+    color: white;
+}
+
+body.light-mode .botao-muda-cor {
+    background-color: #DF1265;
+    color: white;
+} */
